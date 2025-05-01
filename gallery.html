@@ -21,12 +21,114 @@
             </div>
         </div>
     </nav>
+
+
     <div class="main-content">
-
+        <div class="center">
+            <div class="view-cart" style="display: none;">
+                <div class="modal-content">
+                  <button onclick="closeCart()" class="close-btn">x</button>
+                  <h2>Your Cart</h2>
+                  <div id="cart-items">
+                  </div>
+                  <div class="modal-btn">
+                    <div><button onclick="clearCart()" >Clear cart</button></div>
+                    <div><button class="modal-buy" onclick="buyCart()">Buy</button></div>
+                </div>
+                </div>
+              </div>
+            <button class="main-button" onclick="showCart()">View cart</button>
+            <ul class="list">
+                <li class="books">
+                    <img src="./images/Client3_Book1.png" alt="Brie Mine 4Ever">
+                    <div class="box-container">
+                        <p>Brie Mine 4Ever, a book for cheese lovers</p>
+                        <button class="main-button" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                </li>
+                <li class="books">
+                    <img src="./images/Client3_Book2.png" alt="Glory Riders">
+                    <div class="box-container">
+                        <p>Glory Riders, a book about bikers</p>
+                        <button class="main-button" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                </li>
+                <li class="books">
+                    <img src="./images/Client3_Book3.png" alt="Sorcerer’s Shadowed">
+                    <div class="box-container">
+                        <p>Sorcerer’s Shadowed Chronicles, a fantasy book</p>
+                        <button class="main-button" onclick="addToCart(this)" >Add to cart</button>
+                    </div>
+                </li>
+                <li class="books">
+                    <img src="./images/Client3_Magazine1.png" alt="Ball">
+                    <div class="box-container">
+                        <p>Ball, a magazine about pickleball</p>
+                        <button class="main-button" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                </li>
+                <li class="books">
+                    <img src="./images/Client3_Magazine2.png" alt="Travel">
+                    <div class="box-container">
+                        <p>Travel, a magazine for travelers</p>
+                        <button class="main-button" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                </li>
+                <li class="books">
+                    <img src="./images/Client3_Magazine3.png" alt="Eat">
+                    <div class="box-container">
+                        <p>Eat., a magazine for foodies</p>
+                        <button class="main-button" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                </li>
+                <li class="books">
+                    <img src="./images/Client3_Notebook.png" alt="A notebook with text on the cover that says Book Haven Bookstore">
+                    <div class="box-container">
+                        <p>A notebook with text on the cover that says Book Haven Bookstore</p>
+                        <button class="main-button" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                </li>
+                <li class="books">
+                    <img src="./images/Client3_ToteBag.png" alt="A canvas tote bag with black lettering that says ALL I DO IS READ READ READ">
+                    <div class="box-container">
+                        <p>A canvas tote bag with black lettering that says ALL I DO IS READ READ READ</p>
+                        <button class="main-button" onclick="addToCart(this)">Add to cart</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
     <footer class="footer">
-
-
+        <div class="center">
+            <div class="container-social">
+                <div class="newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <form onsubmit="subscribe(event)">
+                        <input type="email" required>
+                        <button type="submit" class="main-button">Subscribe</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/GustavoAlzuru" target="_blank"><img src="./svgs/facebook.svg" alt=""></a>
+                    <a href="https://github.com/GustavoAlzuru" target="_blank"><img src="./svgs/instagram.svg" alt=""></a>
+                    <a href="https://github.com/GustavoAlzuru" target="_blank"><img src="./svgs/youtube.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="navigation-footer">
+                <nav class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="#top">Gallery</a>
+                    <a href="">About us</a>
+                    <a href="">Community</a>
+                </nav>
+            </div>
+        </div>
     </footer>
 </body>
+<script src="./index.js"></script>
 </html>
+
+
+

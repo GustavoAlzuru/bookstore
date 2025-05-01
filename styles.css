@@ -9,8 +9,6 @@
      --text-display-size: 40px;
      --text-large-size: 30px;
      --text-medium-size: 17px;
-
-
 }
 
 *{
@@ -35,6 +33,56 @@ body{
     flex: 1;
     position: relative;
 }
+/* modal for cart */
+.view-cart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: var(--parchment-white);
+    padding: 35px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+  }
+  .modal-content h2{
+    margin-bottom: 20px;
+  }
+  .modal-btn{
+    display: flex;
+  }
+  .modal-btn button{
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    padding: 5px 7px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+  }
+  .modal-buy{
+    margin-left: 20px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+/* end of modal */
 .nav-header{
     background-color: var(--parchment-white);
     min-height: 90px;
@@ -80,6 +128,7 @@ body{
 
 .main-content{
     background-color: var(--parchment-white);
+    padding: 40px 0px;
     flex: 1;
 }
 .center{
@@ -88,11 +137,9 @@ body{
 }
 .main{
     width: 58%;
-}
-.main{
     padding-top: 200px;
-
 }
+
 
 .website-description{
     font-size: var(--text-display-size);
@@ -173,16 +220,103 @@ body{
 } 
 
 
-
+/* categories */
+.promo-content span{
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.categories{
+    margin-bottom: 40px;
+}
 /* footer */
 
 .footer{
     background-color: var(--aged-gold);
     padding: 20px;
 }
+.newsletter p{
+    font-size: var(--text-medium-size);
+}
+.newsletter form{
+    margin-top: 15px;
+}
+.newsletter input{
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.main-button{
+    margin-left: 10px;
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    padding: 5px 7px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.newsletter button:hover{
+    background-color: var(--dusty-rose);
+    color: var(--inkwell-blue);
+}
+.container-social{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container-social div{
+     min-width: 300px;
+     padding: 20px;
+
+}
+.social-links{
+    justify-content: right;
+    display: flex;
+    gap: 30px;
+}
+.social-links img{
+    width: 25px;
+    height: 25px;
+}
+.navigation-footer nav{
+    display: flex;
+    justify-content: center;
+}
+.navigation-footer nav a:hover{
+    color: var(--parchment-white);
+}
 
 
+/* GALLERY PAGE */
 
+.list{
+    display: grid;
+    text-align: center;
+    margin-top: 30px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.books{
+    list-style: none;
+    width: 300px;
+}
+.books img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.box-container{
+    padding: 0px 15px 15px 15px ;
+    border-bottom:1px solid #131c26;
+    border-left: 1px solid #131c26;
+    border-right: 1px solid #131c26;
+}
+.box-container p{
+    padding: 20px 0px;
+}
 /* media queries */
 
 @media only screen and (max-width: 780px) {
