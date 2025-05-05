@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="nav-header">
+        <div class="center header">
+            <a href="./index.html"><img class="logo" src="./images/logo.png" alt="logo of the book haven bookstore"></a>
+            <h2 class="website-title">Book Haven Bookstore</h2>
+            <div>
+                <nav class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./gallery.html">Gallery</a>
+                    <a href="#top">About us</a>
+                    <a href="">Community</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="center">
+            <div class="about-us">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit exercitationem, corporis sit quaerat vel magni laborum ab adipisci, quia ipsa asperiores perspiciatis dolore! Corrupti id expedita, provident tenetur corporis ipsa.</p>
+            </div>
+            <section class="hours">
+                <h3>Business Hours</h3>
+                <table>
+                    <tbody class="table">
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td> 6:00 AM - 6:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>8:00 AM - 8:00PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Your name" required>
+
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Your Email" required>
+
+                    <label>Phone number</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your Phone Number (optional)">
+
+                    <label>Feedback/Order information</label>
+                    <textarea minlength="4" placeholder="Your Feedback/Order information"></textarea>
+
+                    <div class="form-buttons">
+                        <button>Submit</button>
+                        <button>Clear Form</button>
+                    </div>
+                </form>
+            </section>
+        </div> 
+    </div>
+    <footer class="footer">
+        <div class="center">
+            <div class="container-social">
+                <div class="newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <form onsubmit="subscribe(event)">
+                        <input type="email" required>
+                        <button type="submit" class="main-button">Subscribe</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/GustavoAlzuru" target="_blank"><img src="./svgs/facebook.svg" alt=""></a>
+                    <a href="https://github.com/GustavoAlzuru" target="_blank"><img src="./svgs/instagram.svg" alt=""></a>
+                    <a href="https://github.com/GustavoAlzuru" target="_blank"><img src="./svgs/youtube.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="navigation-footer">
+                <nav class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./gallery.html">Gallery</a>
+                    <a href="#top">About us</a>
+                    <a href="">Community</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

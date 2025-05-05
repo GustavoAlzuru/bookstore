@@ -317,6 +317,104 @@ body{
 .box-container p{
     padding: 20px 0px;
 }
+
+/* ABOUT US PAGE */
+
+.about-us h3{
+    font-size: var(--text-large-size);
+}
+.about-us p{
+    margin: 25px 0px;
+}
+
+.hours h3{
+    font-size: var(--text-large-size);
+}
+.hours table{
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 2px solid var(--dusty-rose);
+    border-radius: 12px;
+}
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.hours td{
+    padding: 20px;
+    border-bottom: 1px solid var(--dusty-rose);
+    font-size: var(--text-medium-size);
+}
+  
+.hours tr:last-child td {
+    border-bottom: none;
+}
+  
+.hours td:first-child {
+    font-weight: bold;
+}
+  
+.hours td:last-child {
+    text-align: right;
+}
+
+/* CONTACT US */
+
+.contact {
+    max-width: 600px;
+    margin: 100px 0px;
+}
+  
+.contact h3 {
+    font-size: var(--text-large-size);
+    margin-bottom: 10px;
+}
+  
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact label {
+    margin: 15px 0px 5px 0px;
+    font-weight: 600;
+}
+  
+.contact input,
+.contact textarea {
+    padding: 12px;
+    font-size: var(--text-medium-size);
+    border: 1px solid var(--dusty-rose);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+  
+.contact input:focus,
+.contact textarea:focus {
+    border-color: var(--aged-gold);
+    outline: none;
+}
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 18px;
+  }
+  
+.form-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--dusty-rose);
+    transition: background-color 0.3s ease;
+}
+
+
 /* media queries */
 
 @media only screen and (max-width: 780px) {

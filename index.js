@@ -3,22 +3,10 @@ const cartItemsContainer = document.getElementById('cart-items');
 
 
 const subscribe = (event) => {
-    const emailInput = document.querySelector('input[type="email"]');
-    const email = emailInput.value.trim();
-  
-    if (!email) {
-      alert('Please enter your email.');
-      return false;
-    }
-  
-    if (!emailInput.checkValidity()) {
-      alert('Please enter a valid email address.');
-      return false;
-    }
-  
+    event.preventDefault()
     alert('Thank you for subscribing!');
-    emailInput.value = ''; // Optional: clear the input
-    return false;
+    emailInput.value = ''
+    
 }
 
 
