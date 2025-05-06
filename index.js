@@ -1,6 +1,6 @@
 const viewCart = document.querySelector('.view-cart')
 const cartItemsContainer = document.getElementById('cart-items');
-
+const contactForm = document.getElementById('contactForm')
 
 const subscribe = (event) => {
     event.preventDefault()
@@ -114,3 +114,19 @@ const buyCart = () => {
     showCart()
     alert ('Thanks for buying!')
 }
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+  
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    feedback: document.getElementById('feedback').value
+  }
+  let submissions = JSON.parse(localStorage.getItem('formData')) || []
+  submissions.push(formData)
+  localStorage.setItem('formData', JSON.stringify(submissions))
+  alert('We received your information!')
+})
+

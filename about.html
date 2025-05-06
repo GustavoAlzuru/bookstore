@@ -16,7 +16,7 @@
                     <a href="./index.html">Home</a>
                     <a href="./gallery.html">Gallery</a>
                     <a href="#top">About us</a>
-                    <a href="">Community</a>
+                    <a href="./community.html">Community</a>
                 </nav>
             </div>
         </div>
@@ -25,7 +25,7 @@
         <div class="center">
             <div class="about-us">
                 <h3>About us</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit exercitationem, corporis sit quaerat vel magni laborum ab adipisci, quia ipsa asperiores perspiciatis dolore! Corrupti id expedita, provident tenetur corporis ipsa.</p>
+                <p>Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books, magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and a love for reading, it is embarking on the creation of an online presence that mirrors its dedication to the world of words. Serving a broad audience of book lovers and knowledge seekers, its central goal is to amplify its visibility, cultivate a vibrant literary community, and simplify the process of book inquiries and purchases. Its target audience comprises avid readers, students, and individuals in search of high-quality reading materials and office essentials. Book Haven Bookstore’s website theme revolves around celebrating the written word, creating an inviting digital space that encourages literary discovery, and supporting intellectual growth.</p>
             </div>
             <section class="hours">
                 <h3>Business Hours</h3>
@@ -48,22 +48,21 @@
             </section>
             <section class="contact">
                 <h3>Contact Us</h3>
-                <form>
+                <form id="contactForm">
                     <label>Name</label>
-                    <input type="text" placeholder="Your name" required>
-
+                    <input type="text" id="name" placeholder="Your name" required>
+            
                     <label>Email Address</label>
-                    <input type="email" placeholder="Your Email" required>
-
+                    <input type="email" id="email" placeholder="Your Email" required>
+            
                     <label>Phone number</label>
-                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your Phone Number (optional)">
-
+                    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your Phone Number (optional)">
+            
                     <label>Feedback/Order information</label>
-                    <textarea minlength="4" placeholder="Your Feedback/Order information"></textarea>
-
+                    <textarea id="feedback" minlength="4" placeholder="Your Feedback/Order information"></textarea>
+            
                     <div class="form-buttons">
-                        <button>Submit</button>
-                        <button>Clear Form</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
             </section>
@@ -90,10 +89,11 @@
                     <a href="./index.html">Home</a>
                     <a href="./gallery.html">Gallery</a>
                     <a href="#top">About us</a>
-                    <a href="">Community</a>
+                    <a href="./community.html">Community</a>
                 </nav>
             </div>
         </div>
-    </footer>
+    </footer> 
+    <script src="./index.js"></script>
 </body>
 </html>
